@@ -1,0 +1,20 @@
+[project]
+name = "fastcert"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "luozhouyang", email = "zhouyang.luo@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+]
+
+[project.scripts]
+fastcert = "fastcert:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
