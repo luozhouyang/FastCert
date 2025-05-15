@@ -8,7 +8,10 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi",
+    "fastapi>=0.115.12",
+    "gufo-acme>=0.4.0",
+    "pydantic>=2.11.4",
+    "uvicorn>=0.34.2",
 ]
 
 [project.scripts]
@@ -18,3 +21,7 @@ fastcert = "fastcert:main"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+name  = "aliyun"
